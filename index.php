@@ -7,6 +7,6 @@
 
     </head>
     <body>
-        <p>innhold</p>
+        <h1>innhold</h1>
     </body>
 </html>

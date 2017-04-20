@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+	position: relative;
+}
+
+body {
+    background-color: #6FCDE3;
+    font-family: Lorena, "Copperplate Gothic Light", fantasy;
+	min-height: 100vh;
+}
+
+h1 {
+	color: black;
+	width: 150px;
+	height: 150px;
+	background-color: #FCFAEA;
+}
