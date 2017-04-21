@@ -7,6 +7,15 @@
 
     </head>
     <body>
-        <h1>innhold</h1>
+		<div id="header">
+			<img id="bilde" alt="logo" src="bespistlogo.png">
+			<nav id="navigasjon">
+				<div class="meny">MENY</div>
+				<div class="meny">MENY</div>
+				<div class="meny">MENY</div>
+				<div class="meny">MENY</div>
+			</nav>
+		</div>
+		<div id="ball"></div>
     </body>
 </html>

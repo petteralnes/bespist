@@ -9,14 +9,59 @@ html {
 }
 
 body {
-    background-color: #6FCDE3;
+    background-color: #FCFAEA;
     font-family: Lorena, "Copperplate Gothic Light", fantasy;
-	min-height: 100vh;
+	min-height: 200vh;
 }
 
-h1 {
-	color: black;
-	width: 150px;
-	height: 150px;
-	background-color: #FCFAEA;
+#header {
+	position: relative;
+	left: 0;
+	top: 0px;
+	background-color: #7ECCBE;
+	width: 100%;
+	height: 300px;
+	z-index: 2;
 }
+
+#navigasjon {
+	position: absolute;
+	left: 40%;
+	top: 50%;
+	width: 60%;
+	transform: translate(0, -50%);
+}
+
+.meny {
+	width: 200px;
+	height: 150px;
+	background-color: #225C34;
+	color: white;
+	display: inline-block;
+	border-collapse: collapse;
+}
+
+#ball {
+	width: 280px;
+	height: 280px;
+	background-color: #225C34;
+	z-index: 1;
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	border-radius: 50%;
+}
+
+#bilde {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	width: 450px;
+	height: 200px;
+	transform: translate(0, -50%);
+}
+
+
+
+
+
