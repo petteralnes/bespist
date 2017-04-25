@@ -88,7 +88,10 @@ body {
 }
 
 main {
-	background-color:
+	font-family:sans-serif;
+	background-color: green;
+	width: 80%;
+	margin: auto;
 }
 
 
