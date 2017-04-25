@@ -3,7 +3,7 @@
     <head>
         <title>Bespist</title>
         <meta charset="utf-8" />
-		<link rel="stylesheet" href="nettsidestil.css">
+		<link rel="stylesheet" href="css/nettsidestil.css">
 		<link rel="icon" href="img/bespist.png">
 
     </head>
