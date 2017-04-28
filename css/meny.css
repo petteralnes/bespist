@@ -1,0 +1,8 @@
+.matbilde {
+	width: 300px;
+	height: 200px;
+}
+
+#forretter, #hovedretter, #desserter {
+	display: none;
+}
