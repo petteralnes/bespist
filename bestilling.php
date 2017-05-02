@@ -9,7 +9,7 @@
     </head>
     <body>
 		<div id="header">
-			<a href="index.php"><img id="bilde" alt="logo" src="img/bespistlogo2.png"></a>
+			<a href="index.php"><img id="bilde" alt="logo" src="img/bespistlogo.png"></a>
 			<nav id="navigasjon">
 				<a href="index.php"><div class="menybtn"><p>HJEM</p></div></a>
 				<a href="meny.php"><div class="menybtn"><p>MENY</p></div></a>

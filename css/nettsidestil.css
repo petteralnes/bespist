@@ -18,7 +18,7 @@ body {
 	position: relative;
 	left: 0;
 	top: 0px;
-	background-color: #225C34;
+	background-color: #7ECCBE;
 	width: 100%;
 	height: 150px;
 	z-index: 2;
@@ -35,18 +35,18 @@ body {
 .menybtn {
 	width: 28.5%;
 	height: 120px;
-	background-color: #7ECCBE;
+	background-color: #225C34;
 	color: white;
 	display: inline-block;
 	border-collapse: collapse;
 	font-size: 34px;
 	margin: 2%;
 	text-align: center;
-	transition: 500ms;
+	transition: 300ms;
 }
 
 .menybtn:hover {
-	background-color: #FCFAEA;
+	background-color: #41654c;
 	cursor: pointer;
 	color: black;
 }
@@ -95,6 +95,7 @@ main {
 	margin: auto;
 	position: relative;
 	top: 30px;
+	height: auto;
 }
 
 
