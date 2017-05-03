@@ -20,5 +20,9 @@
 		<main>
 
 		</main>
+
+		<footer>
+		<p>yo wadup</p>
+		</footer>
     </body>
 </html>

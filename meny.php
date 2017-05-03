@@ -27,7 +27,6 @@
 			</div>
 
 			<div id="matrett_vis">
-
 				<div id="forretter">
 					<?php
 						error_reporting(-1);
@@ -46,8 +45,8 @@
 							<h2><?php echo $rad["matrettnavn"]; ?></h2>
 							<img class="matbilde" src="img/<?php echo $rad["matbilde"]; ?>" alt="bilde">
 						</div>
-						<div class="mat_info">
-							<p class="matbeskrivelse"><?php echo $rad["beskrivelse"]; ?></p>
+						<div class="mat_info2">
+							<p class="matbeskrivelse">Dilor cero era famila erote amet dolor viverra, eu viverra sem viverra.</p>
 						</div>
 					</div>
 
@@ -71,7 +70,7 @@
 							<h2><?php echo $rad["matrettnavn"]; ?></h2>
 							<img class="matbilde" src="img/<?php echo $rad["matbilde"]; ?>" alt="bilde">
 						</div>
-						<div class="mat_info">
+						<div class="mat_info2">
 							<p class="matbeskrivelse"><?php echo $rad["beskrivelse"]; ?></p>
 						</div>
 					</div>
@@ -96,7 +95,7 @@
 							<h2><?php echo $rad["matrettnavn"]; ?></h2>
 							<img class="matbilde" src="img/<?php echo $rad["matbilde"]; ?>" alt="bilde">
 						</div>
-						<div class="mat_info">
+						<div class="mat_info2">
 							<p class="matbeskrivelse"><?php echo $rad["beskrivelse"]; ?></p>
 						</div>
 					</div>

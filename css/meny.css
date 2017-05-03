@@ -1,23 +1,19 @@
-.matbilde {
-	width: 150px;
-	height: 100px;
-}
-
 #forretter, #hovedretter, #desserter {
 	display: none;
 }
 
 #matrett_nav {
-	width: 70%;
-	height: 60px;
+	width: 80%;
+	height: 80px;
 	margin: auto;
 
 }
 
 .matrett_btn {
 	width: 30%;
-	background-color: blue;
-	color: white;
+	margin: 1.4%;
+	background-color: #faefde;
+	color: black;
 	height: 100%;
 	display: inline-block;
 	text-align: center;
@@ -26,7 +22,9 @@
 
 .matrett_btn h2 {
 	font-size: 25px;
-	transform: translate(0, 50%);
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
 }
 
 .matrett_btn:hover {
@@ -36,18 +34,42 @@
 }
 
 #matrett_vis {
-	width: 80%;
+	width: 90%;
 	margin: auto;
 	margin-top: 30px;
 }
 
-.mat_info {
-}
-
 .matvisning {
 	display: flex;
+	height: auto;
+	width: 100%;
+	position: relative;
+	margin-top: 80px;
+}
+
+.mat_info {
+	width: 50%;
+}
+
+.matbilde {
+	width: 400px;
+	height: 270px;
+}
+
+.mat_info h2 {
+	font-size: 40px;
+	margin: 0px 0px 10px 0px;
+}
+
+.mat_info2 p {
+	width: 400px;
+	font-size: 35px;
+	position: relative;
+	top: 50px;
+	left: 0px;
 }
 
 main {
 	padding: 20px;
+	background-color: #225C34;
 }

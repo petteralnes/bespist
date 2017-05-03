@@ -16,7 +16,9 @@
 				<a href="bestilling.php"><div class="menybtn"><p>BESTILLING</p></div></a>
 			</nav>
 		</div>
+
 		<div id="ball"> <img id="B_bilde" src="img/bespistlogo_b.png" alt="B"> </div>
+
 		<main>
 
 		</main>
