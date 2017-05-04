@@ -43,10 +43,10 @@
 					<div class="matvisning">
 						<div class="mat_info">
 							<h2><?php echo $rad["matrettnavn"]; ?></h2>
-							<img class="matbilde" src="img/<?php echo $rad["matbilde"]; ?>" alt="bilde">
+							<img class="matbilde" src="img/forrett/<?php echo $rad["matbilde"]; ?>" alt="bilde">
 						</div>
 						<div class="mat_info2">
-							<p class="matbeskrivelse">Dilor cero era famila erote amet dolor viverra, eu viverra sem viverra.</p>
+							<p class="matbeskrivelse"><?php echo $rad["beskrivelse"]; ?></p>
 						</div>
 					</div>
 
@@ -68,7 +68,7 @@
 					<div class="matvisning">
 						<div class="mat_info">
 							<h2><?php echo $rad["matrettnavn"]; ?></h2>
-							<img class="matbilde" src="img/<?php echo $rad["matbilde"]; ?>" alt="bilde">
+							<img class="matbilde" src="img/hovedrett/<?php echo $rad["matbilde"]; ?>" alt="bilde">
 						</div>
 						<div class="mat_info2">
 							<p class="matbeskrivelse"><?php echo $rad["beskrivelse"]; ?></p>
@@ -93,7 +93,7 @@
 					<div class="matvisning">
 						<div class="mat_info">
 							<h2><?php echo $rad["matrettnavn"]; ?></h2>
-							<img class="matbilde" src="img/<?php echo $rad["matbilde"]; ?>" alt="bilde">
+							<img class="matbilde" src="img/dessert/<?php echo $rad["matbilde"]; ?>" alt="bilde">
 						</div>
 						<div class="mat_info2">
 							<p class="matbeskrivelse"><?php echo $rad["beskrivelse"]; ?></p>
