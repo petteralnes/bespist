@@ -22,7 +22,7 @@
 		</main>
 
 		<footer>
-		<p>yo wadup</p>
+			<p>yo wadup</p>
 		</footer>
     </body>
 </html>

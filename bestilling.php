@@ -22,12 +22,11 @@
 
 		<main>
 			<div>
-				<div id="kundenavn">
+				<div>
 					<?php
 					error_reporting(-1);
 					ini_set('display_errors', 'On');
 					$tilkobling = mysqli_connect("localhost","root","root","bespist1");
-
 						if(isset($_POST["submit"]))
 							{
 								$sql = sprintf("INSERT INTO kunde(kundeid, fornavn, etternavn, gatenavn, gatenummer, postnummer, telefonnr)
@@ -43,16 +42,13 @@
 						$tilkobling->query($sql);
 						print $tilkobling->error;
 					}
-
-
 						$sql = "SELECT kunde.kundeid, kunde.fornavn, kunde.etternavn, kunde.gatenavn, kunde.gatenummer, kunde.postnummer, kunde.telefonnr
 								FROM vare
 								ORDER BY vareid";
 						$datasett = $tilkobling->query($sql);
-
 					?>
 
-					<div id="registrernavn">
+					<div>
 						<form method="post">
 							<label for="textVarenavn"></label>
 							<input placeholder="Kunde-ID (minst 5 tall)" type="text" name="txtkundeid" class="input"/>
@@ -63,11 +59,10 @@
 							<input placeholder="Postnummer" type="text" name="txtpostnummer" class="input"/>
 							<input placeholder="Telefon-nummer" type="text" name="txttelefonnr" class="input"/>
 
-							<button type="submit" name="submit" id="button">Send</button>
+							<input class="submit" type="submit" name="submit" value="send">
 						</form>
 					</div>
 				</div>
-
 			</div>
 		</main>
     </body>

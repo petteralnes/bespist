@@ -32,7 +32,7 @@
 						error_reporting(-1);
 						ini_set('display_errors', 'On');
 						$tilkobling = mysqli_connect("localhost","root","root","bespist1");
-						$sql = "SELECT matretter.beskrivelse, matretter.matrettnavn, matretter.matbilde, kategori.kategorinavn
+						$sql = "SELECT matretter.beskrivelse, matretter.matrettnavn, matretter.matbilde, matretter.matrettid, kategori.kategorinavn
 								FROM kategori, matretter
 								WHERE matretter.kategoriid = kategori.kategoriid AND kategori.kategoriid = 1";
 						$datasett = $tilkobling->query($sql);
@@ -105,22 +105,26 @@
 		</main>
 
 		<script>
+			var f = document.getElementById("forretter");
+			var h = document.getElementById("hovedretter");
+			var d = document.getElementById("desserter");
+
 			function frett() {
-				document.getElementById("forretter").style.display = "block";
-				document.getElementById("hovedretter").style.display = "none";
-				document.getElementById("desserter").style.display = "none";
+				f.style.display = "block";
+				h.style.display = "none";
+				d.style.display = "none";
 			}
 
 			function hrett() {
-				document.getElementById("forretter").style.display = "none";
-				document.getElementById("hovedretter").style.display = "block";
-				document.getElementById("desserter").style.display = "none";
+				f.style.display = "none";
+				h.style.display = "block";
+				d.style.display = "none";
 			}
 
 			function dessert() {
-				document.getElementById("forretter").style.display = "none";
-				document.getElementById("hovedretter").style.display = "none";
-				document.getElementById("desserter").style.display = "block";
+				f.style.display = "none";
+				h.style.display = "none";
+				d.style.display = "block";
 			}
 		</script>
     </body>

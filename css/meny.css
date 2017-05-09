@@ -45,6 +45,9 @@
 	width: 100%;
 	position: relative;
 	margin-top: 80px;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 10px;
+	border-radius: 4px;
 }
 
 .mat_info {
@@ -59,7 +62,6 @@
 .mat_info h2 {
 	font-size: 40px;
 	text-align: center;
-	margin: 0px 0px 10px 0px;
 
 }
 
@@ -73,5 +75,4 @@
 
 main {
 	padding: 20px;
-	background-color: #225C34;
 }
