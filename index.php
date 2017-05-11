@@ -17,12 +17,14 @@
 			</nav>
 		</div>
 		<div id="ball"> <img id="B_bilde" src="img/bespistlogo_b.png" alt="B"> </div>
-		<main>
-
-		</main>
 
 		<footer>
-			<p>yo wadup</p>
+			<p id="kontakt">Kontakt oss!</p>
+			<ul>
+				<li>Instagram</li>
+				<li>Facebook</li>
+				<li>Twitter</li>
+			</ul>
 		</footer>
     </body>
 </html>

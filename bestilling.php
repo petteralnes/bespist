@@ -21,50 +21,44 @@
 		<div id="ball"> <img id="B_bilde" src="img/bespistlogo_b.png" alt="B"> </div>
 
 		<main>
-			<div>
-				<div>
+			<div id="innfyll">
+
+				<div id="kundereg">
+
 					<?php
-					error_reporting(-1);
-					ini_set('display_errors', 'On');
-					$tilkobling = mysqli_connect("localhost","root","root","bespist1");
+						error_reporting(-1);
+						ini_set('display_errors', 'On');
+						$tilkobling = mysqli_connect("localhost","root","root","bespist1");
 						if(isset($_POST["submit"]))
 							{
 								$sql = sprintf("INSERT INTO kunde(kundeid, fornavn, etternavn, gatenavn, gatenummer, postnummer, telefonnr)
-										   	VALUES('%s','%s','%s','%s','%s','%s','%s')",
-									  			$tilkobling->real_escape_string($_POST["txtkundeid"]),
-									  			$tilkobling->real_escape_string($_POST["txtfornavn"]),
-									  			$tilkobling->real_escape_string($_POST["txtetternavn"]),
-									  			$tilkobling->real_escape_string($_POST["txtgatenavn"]),
-												$tilkobling->real_escape_string($_POST["txtgatenummer"]),
-											   	$tilkobling->real_escape_string($_POST["txtpostnummer"]),
-											   	$tilkobling->real_escape_string($_POST["txttelefonnr"])
-									   );
+										VALUES('%s','%s','%s','%s','%s','%s','%s')",
+											$tilkobling->real_escape_string($_POST["txtkundeid"]),
+											$tilkobling->real_escape_string($_POST["txtfornavn"]),
+											$tilkobling->real_escape_string($_POST["txtetternavn"]),
+											$tilkobling->real_escape_string($_POST["txtgatenavn"]),
+											$tilkobling->real_escape_string($_POST["txtgatenummer"]),
+											$tilkobling->real_escape_string($_POST["txtpostnummer"]),
+											$tilkobling->real_escape_string($_POST["txttelefonnr"])
+								   );
 						$tilkobling->query($sql);
 						print $tilkobling->error;
-					}
-						$sql = "SELECT kunde.kundeid, kunde.fornavn, kunde.etternavn, kunde.gatenavn, kunde.gatenummer, kunde.postnummer, kunde.telefonnr
-								FROM vare
-								ORDER BY vareid";
-						$datasett = $tilkobling->query($sql);
+							}
 					?>
 
-					<div>
-						<form method="post">
-							<label for="textVarenavn"></label>
-							<input placeholder="Kunde-ID (minst 5 tall)" type="text" name="txtkundeid" class="input"/>
-							<input placeholder="Fornavn" type="text" name="txtfornavn" class="input"/>
-							<input placeholder="Etternavn" type="text" name="txtetternavn" class="input"/>
-							<input placeholder="Gatenavn" type="text" name="txtgatenavn" class="input"/>
-							<input placeholder="Gatenummer" type="text" name="txtgatenummer" class="input"/>
-							<input placeholder="Postnummer" type="text" name="txtpostnummer" class="input"/>
-							<input placeholder="Telefon-nummer" type="text" name="txttelefonnr" class="input"/>
+					<form action="bestillingdel2.php" method="post">
+						<input placeholder="Kunde-ID (minst 5 tall)" type="text" name="txtkundeid" class="input" autocomplete="off"/>
+						<input placeholder="Fornavn" type="text" name="txtfornavn" class="input" autocomplete="off"/>
+						<input placeholder="Etternavn" type="text" name="txtetternavn" class="input" autocomplete="off"/>
+						<input placeholder="Gatenavn" type="text" name="txtgatenavn" class="input" autocomplete="off"/>
+						<input placeholder="Gatenummer" type="text" name="txtgatenummer" class="input" autocomplete="off"/>
+						<input placeholder="Postnummer" type="text" name="txtpostnummer" class="input" autocomplete="off"/>
+						<input placeholder="Telefon-nummer" type="text" name="txttelefonnr" class="input" autocomplete="off"/>
 
-							<input class="submit" type="submit" name="submit" value="send">
-						</form>
-					</div>
+						<button id="submit" type="submit" name="submit">Send</button>
+					</form>
 				</div>
 			</div>
 		</main>
     </body>
 </html>
-

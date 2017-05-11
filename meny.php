@@ -32,7 +32,7 @@
 						error_reporting(-1);
 						ini_set('display_errors', 'On');
 						$tilkobling = mysqli_connect("localhost","root","root","bespist1");
-						$sql = "SELECT matretter.beskrivelse, matretter.matrettnavn, matretter.matbilde, matretter.matrettid, kategori.kategorinavn
+						$sql = "SELECT matretter.beskrivelse, matretter.matrettnavn, matretter.matbilde, matretter.matrettid, matretter.pris, kategori.kategorinavn
 								FROM kategori, matretter
 								WHERE matretter.kategoriid = kategori.kategoriid AND kategori.kategoriid = 1";
 						$datasett = $tilkobling->query($sql);
@@ -46,7 +46,9 @@
 							<img class="matbilde" src="img/forrett/<?php echo $rad["matbilde"]; ?>" alt="bilde">
 						</div>
 						<div class="mat_info2">
+							<h2>NR: <?php echo $rad["matrettid"]; ?></h2>
 							<p class="matbeskrivelse"><?php echo $rad["beskrivelse"]; ?></p>
+							<p class="pris">Pris: kr<?php echo $rad["pris"]; ?>,-</p>
 						</div>
 					</div>
 
@@ -58,7 +60,7 @@
 						error_reporting(-1);
 						ini_set('display_errors', 'On');
 						$tilkobling = mysqli_connect("localhost","root","root","bespist1");
-						$sql = "SELECT matretter.beskrivelse, matretter.matrettnavn, matretter.matbilde, matretter.pris, kategori.kategorinavn
+						$sql = "SELECT matretter.beskrivelse, matretter.matrettnavn, matretter.matbilde, matretter.matrettid, matretter.pris, kategori.kategorinavn
 								FROM kategori, matretter
 								WHERE matretter.kategoriid = kategori.kategoriid AND kategori.kategoriid = 2";
 						$datasett = $tilkobling->query($sql);
@@ -71,7 +73,9 @@
 							<img class="matbilde" src="img/hovedrett/<?php echo $rad["matbilde"]; ?>" alt="bilde">
 						</div>
 						<div class="mat_info2">
+							<h2>NR: <?php echo $rad["matrettid"]; ?></h2>
 							<p class="matbeskrivelse"><?php echo $rad["beskrivelse"]; ?></p>
+							<p class="pris">Pris: kr<?php echo $rad["pris"]; ?>,-</p>
 						</div>
 					</div>
 
@@ -83,7 +87,7 @@
 					error_reporting(-1);
 					ini_set('display_errors', 'On');
 					$tilkobling = mysqli_connect("localhost","root","root","bespist1");
-					$sql = "SELECT matretter.beskrivelse, matretter.matrettnavn, matretter.matbilde, kategori.kategorinavn
+					$sql = "SELECT matretter.beskrivelse, matretter.matrettnavn, matretter.matbilde, matretter.matrettid, matretter.pris, kategori.kategorinavn
 							FROM kategori, matretter
 							WHERE matretter.kategoriid = kategori.kategoriid AND kategori.kategoriid = 3";
 					$datasett = $tilkobling->query($sql);
@@ -96,7 +100,9 @@
 							<img class="matbilde" src="img/dessert/<?php echo $rad["matbilde"]; ?>" alt="bilde">
 						</div>
 						<div class="mat_info2">
+							<h2>NR: <?php echo $rad["matrettid"]; ?></h2>
 							<p class="matbeskrivelse"><?php echo $rad["beskrivelse"]; ?></p>
+							<p class="pris">Pris: kr<?php echo $rad["pris"]; ?>,-</p>
 						</div>
 					</div>
 				<?php } ?>
