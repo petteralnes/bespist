@@ -22,9 +22,8 @@
 
 		<main>
 			<div id="innfyll">
-
+				<h1>vennligst husk din brukerid.</h1>
 				<div id="kundereg">
-
 					<?php
 						error_reporting(-1);
 						ini_set('display_errors', 'On');
@@ -45,8 +44,7 @@
 						print $tilkobling->error;
 							}
 					?>
-
-					<form action="bestillingdel2.php" method="post">
+					<form method="post">
 						<input placeholder="Kunde-ID (minst 5 tall)" type="text" name="txtkundeid" class="input" autocomplete="off"/>
 						<input placeholder="Fornavn" type="text" name="txtfornavn" class="input" autocomplete="off"/>
 						<input placeholder="Etternavn" type="text" name="txtetternavn" class="input" autocomplete="off"/>
@@ -58,6 +56,7 @@
 						<button id="submit" type="submit" name="submit">Send</button>
 					</form>
 				</div>
+				<a href="bestillingdel2.php"><p>trykk her etter å ha trykt på send :)))))</p></a>
 			</div>
 		</main>
     </body>

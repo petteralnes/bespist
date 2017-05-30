@@ -21,12 +21,11 @@
 		<main>
 			<div id="bestillingreg">
 				<?php
-					error_reporting(-1);
 					ini_set('display_errors', 'On');
 					$tilkobling = mysqli_connect("localhost","root","root","bespist1");
 					if(isset($_POST["submit"]))
 						{
-							$sql = sprintf("INSERT INTO bestilling( kundeid, forrett, hovedrett, dessert)
+							$sql = sprintf("INSERT INTO bestilling(kundeid, forrett, hovedrett, dessert)
 									VALUES('%s','%s','%s','%s')",
 										$tilkobling->real_escape_string($_POST["txtkundeid"]),
 										$tilkobling->real_escape_string($_POST["txtforrett"]),
@@ -40,9 +39,9 @@
 
 				<form method="post">
 					<input placeholder="Kunde id du skrev inn tidligere" type="text" name="txtkundeid" class="input" autocomplete="off"/>
-					<input placeholder="Forrett-nummer" type="text" name="txtforrett" class="input" autocomplete="off"/>
-					<input placeholder="Hovedrett-nummer" type="text" name="txthovedrett" class="input" autocomplete="off"/>
-					<input placeholder="Dessert-nummer" type="text" name="txtdessert" class="input" autocomplete="off"/>
+					<input placeholder="Forrettnr." type="text" name="txtforrett" class="input" autocomplete="off"/>
+					<input placeholder="Hovedrettnr." type="text" name="txthovedrett" class="input" autocomplete="off"/>
+					<input placeholder="Dessertnr." type="text" name="txtdessert" class="input" autocomplete="off"/>
 
 					<button id="submit" type="submit" name="submit">Send</button>
 				</form>
