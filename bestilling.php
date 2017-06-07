@@ -18,11 +18,12 @@
 			</nav>
 		</div>
 
-		<div id="ball"> <img id="B_bilde" src="img/bespistlogo_b.png" alt="B"> </div>
-
 		<main>
 			<div id="innfyll">
-				<h1>vennligst husk din brukerid.</h1>
+				<h1 id="overskrift">Bestilling</h1>
+				<h3 class="info">Her registrerer du deg som kunde hos oss, vennligst beskriv adressen du ønsker leveranse til.</h3>
+				<h3 class="info">Notér ned kunde-id du skriver inn, slik at du ikke glemmer den til neste innfyllingsskjema.</h3>
+				<h3 class="info">Når du har sendt inn skjemaet, er du registrert hos oss. Deretter klikker du på knappen under.</h3>
 				<div id="kundereg">
 					<?php
 						error_reporting(-1);
@@ -56,7 +57,8 @@
 						<button id="submit" type="submit" name="submit">Send</button>
 					</form>
 				</div>
-				<a href="bestillingdel2.php"><p>trykk her etter å ha trykt på send :)))))</p></a>
+				<a href="bestillingdel2.php" id="trond">Trykk her når skjemaet er sendt inn.</a>
+				<p id="ballefaen">PS: Dersom du allerede er registrert hos oss kan du trykke her med en gang!</p>
 			</div>
 		</main>
     </body>

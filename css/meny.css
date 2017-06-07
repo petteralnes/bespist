@@ -1,4 +1,4 @@
-#forretter, #hovedretter, #desserter {
+#hovedretter, #desserter {
 	display: none;
 }
 
@@ -88,4 +88,9 @@
 
 main {
 	padding: 20px;
+}
+
+.overskrift {
+	font-size: 50px;
+	text-align: center;
 }

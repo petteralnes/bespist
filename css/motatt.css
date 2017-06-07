@@ -1,0 +1,16 @@
+body {
+	background-color: #3e3e3e;
+}
+
+table, tr, td {
+	border: 1px solid black;
+	padding: 3px;
+	font-size: 24px;
+	color: white;
+}
+
+h1 {
+	font-size: 40px;
+	color: white;
+	text-align: center;
+}

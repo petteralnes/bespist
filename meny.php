@@ -28,6 +28,8 @@
 
 			<div id="matrett_vis">
 				<div id="forretter">
+
+					<h1 class="overskrift">Forretter</h1>
 					<?php
 						error_reporting(-1);
 						ini_set('display_errors', 'On');
@@ -56,6 +58,9 @@
 				</div>
 
 				<div id="hovedretter">
+
+					<h1 class="overskrift">Hovedretter</h1>
+
 					<?php
 						error_reporting(-1);
 						ini_set('display_errors', 'On');
@@ -83,6 +88,9 @@
 				</div>
 
 				<div id="desserter">
+
+					<h1 class="overskrift">Desserter</h1>
+
 				<?php
 					error_reporting(-1);
 					ini_set('display_errors', 'On');
